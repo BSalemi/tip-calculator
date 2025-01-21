@@ -1,7 +1,13 @@
 import Bill from "./Bill.js";
+import Service from "./Service.js";
 
 function App() {
-  return <Bill />;
+  return (
+    <div>
+      <Bill />
+      <Service />
+    </div>
+  );
 }
 
 export default App;
