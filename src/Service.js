@@ -1,8 +1,4 @@
-import { useState } from "react";
-
-function Service() {
-  const [tip, setTip] = useState(5);
-
+function Service({ tip, setTip, children }) {
   return (
     <div>
       <span>How did you like your service?</span>

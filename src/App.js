@@ -6,11 +6,12 @@ import Total from "./Total.js";
 
 function App() {
   const [price, setPrice] = useState("");
+  const [tip, setTip] = useState(5);
   return (
     <div>
       <Bill price={price} setPrice={setPrice} />
-      <Service />
-      <Service />
+      <Service tip={tip} setTip={setTip} />
+      <Service tip={tip} setTip={setTip} />
       <Total />
       <Reset />
     </div>
