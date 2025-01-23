@@ -10,8 +10,12 @@ function App() {
   return (
     <div>
       <Bill price={price} setPrice={setPrice} />
-      <Service tip={tip} setTip={setTip} />
-      <Service tip={tip} setTip={setTip} />
+      <Service tip={tip} setTip={setTip}>
+        <span>How did you like the service?</span>
+      </Service>
+      <Service tip={tip} setTip={setTip}>
+        <span>How did your friend like the service?</span>
+      </Service>
       <Total />
       <Reset />
     </div>

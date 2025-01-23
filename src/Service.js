@@ -1,7 +1,7 @@
 function Service({ tip, setTip, children }) {
   return (
     <div>
-      <span>How did you like your service?</span>
+      {children}
       <select value={tip} onChange={(e) => setTip(e.target.value)}>
         <option value={0}> Dissatisfied (0%)</option>
         <option value={5}> It was okay (5%)</option>
