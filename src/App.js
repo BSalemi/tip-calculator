@@ -5,8 +5,13 @@ import Reset from "./ResetButton.js";
 import Total from "./Total.js";
 
 function App() {
-  const [price, setPrice] = useState("");
-  const [tip, setTip] = useState(5);
+  const [price, setPrice] = useState(0);
+  const [tip, setTip] = useState(0);
+
+  function handleReset() {
+    setPrice(0);
+    setTip(0);
+  }
   return (
     <div>
       <Bill price={price} setPrice={setPrice} />
@@ -16,8 +21,8 @@ function App() {
       <Service tip={tip} setTip={setTip}>
         <span>How did your friend like the service?</span>
       </Service>
-      <Total />
-      <Reset />
+      <Total tip={tip} bill={price} />
+      <Reset handleReset={handleReset} />
     </div>
   );
 }
