@@ -9,11 +9,14 @@ function App() {
   const [tipPercentage1, setTipPercentage1] = useState(0);
   const [tipPercentage2, setTipPercentage2] = useState(0);
 
+  let combinedTip = (tipPercentage1 + tipPercentage2) / 2;
+
   function handleReset() {
     setPrice(0);
     setTipPercentage1(0);
     setTipPercentage2(0);
   }
+
   return (
     <div>
       <BillInput price={price} setPrice={setPrice} />
@@ -29,7 +32,7 @@ function App() {
       >
         <span>How did your friend like the service?</span>
       </SelectPercentage>
-      <Total tipPercentage={tipPercentage1} bill={price} />
+      <Total tip={combinedTip} bill={price} />
       <Reset handleReset={handleReset} />
     </div>
   );

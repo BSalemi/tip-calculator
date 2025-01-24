@@ -1,8 +1,11 @@
-function SelectPercentage({ tip, setTip, children }) {
+function SelectPercentage({ tipPercentage, setTipPercentage, children }) {
   return (
     <div>
       {children}
-      <select value={tip} onChange={(e) => setTip(Number(e.target.value))}>
+      <select
+        value={tipPercentage}
+        onChange={(e) => setTipPercentage(Number(e.target.value))}
+      >
         <option value={0}> Dissatisfied (0%)</option>
         <option value={5}> It was okay (5%)</option>
         <option value={10}> It was good (10%)</option>
