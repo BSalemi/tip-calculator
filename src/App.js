@@ -5,21 +5,21 @@ import Reset from "./ResetButton.js";
 import Total from "./Total.js";
 
 function App() {
-  const [price, setPrice] = useState(0);
+  const [bill, setBill] = useState("");
   const [tipPercentage1, setTipPercentage1] = useState(0);
   const [tipPercentage2, setTipPercentage2] = useState(0);
 
   let combinedTip = (tipPercentage1 + tipPercentage2) / 2;
 
   function handleReset() {
-    setPrice(0);
+    setBill("");
     setTipPercentage1(0);
     setTipPercentage2(0);
   }
 
   return (
     <div>
-      <BillInput price={price} setPrice={setPrice} />
+      <BillInput bill={bill} setBill={setBill} />
       <SelectPercentage
         tipPercentage={tipPercentage1}
         setTipPercentage={setTipPercentage1}
@@ -32,8 +32,13 @@ function App() {
       >
         <span>How did your friend like the service?</span>
       </SelectPercentage>
-      <Total tip={combinedTip} bill={price} />
-      <Reset handleReset={handleReset} />
+
+      {bill > 0 && (
+        <>
+          <Total tip={combinedTip} bill={bill} />
+          <Reset handleReset={handleReset} />
+        </>
+      )}
     </div>
   );
 }

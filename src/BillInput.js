@@ -1,11 +1,12 @@
-function BillInput({ price, setPrice }) {
+function BillInput({ bill, setBill }) {
   return (
     <div>
       <span>How much was the bill?</span>
       <input
-        type="text"
-        value={price}
-        onChange={(e) => setPrice(Number(e.target.value))}
+        type="number"
+        placeholder="Bill value"
+        value={bill}
+        onChange={(e) => setBill(Number(e.target.value))}
       ></input>
     </div>
   );
