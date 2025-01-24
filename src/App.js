@@ -1,6 +1,6 @@
 import { useState } from "react";
-import Bill from "./Bill.js";
-import Service from "./Service.js";
+import BillInput from "./BillInput.js";
+import SelectPercentage from "./SelectPercentage.js";
 import Reset from "./ResetButton.js";
 import Total from "./Total.js";
 
@@ -14,13 +14,13 @@ function App() {
   }
   return (
     <div>
-      <Bill price={price} setPrice={setPrice} />
-      <Service tip={tip} setTip={setTip}>
+      <BillInput price={price} setPrice={setPrice} />
+      <SelectPercentage tip={tip} setTip={setTip}>
         <span>How did you like the service?</span>
-      </Service>
-      <Service tip={tip} setTip={setTip}>
+      </SelectPercentage>
+      <SelectPercentage tip={tip} setTip={setTip}>
         <span>How did your friend like the service?</span>
-      </Service>
+      </SelectPercentage>
       <Total tip={tip} bill={price} />
       <Reset handleReset={handleReset} />
     </div>

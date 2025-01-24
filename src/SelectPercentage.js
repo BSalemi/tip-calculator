@@ -1,4 +1,4 @@
-function Service({ tip, setTip, children }) {
+function SelectPercentage({ tip, setTip, children }) {
   return (
     <div>
       {children}
@@ -12,4 +12,4 @@ function Service({ tip, setTip, children }) {
   );
 }
 
-export default Service;
+export default SelectPercentage;

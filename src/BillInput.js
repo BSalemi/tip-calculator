@@ -1,4 +1,4 @@
-function Bill({ price, setPrice }) {
+function BillInput({ price, setPrice }) {
   return (
     <div>
       <span>How much was the bill?</span>
@@ -11,4 +11,4 @@ function Bill({ price, setPrice }) {
   );
 }
 
-export default Bill;
+export default BillInput;
