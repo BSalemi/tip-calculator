@@ -1,7 +1,11 @@
 import TipCalculator from "./TipCalculator.js";
 
 function App() {
-  return <TipCalculator />;
+  return (
+    <div className="app">
+      <TipCalculator />
+    </div>
+  );
 }
 
 export default App;

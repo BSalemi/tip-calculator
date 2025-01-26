@@ -24,13 +24,13 @@ function TipCalculator() {
         tipPercentage={tipPercentage1}
         setTipPercentage={setTipPercentage1}
       >
-        <span>How did you like the service?</span>
+        <span className="text">How did you like the service?</span>
       </SelectPercentage>
       <SelectPercentage
         tipPercentage={tipPercentage2}
         setTipPercentage={setTipPercentage2}
       >
-        <span>How did your friend like the service?</span>
+        <span className="text">How did your friend like the service?</span>
       </SelectPercentage>
 
       {bill > 0 && (

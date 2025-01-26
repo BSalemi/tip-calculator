@@ -1,7 +1,7 @@
 function BillInput({ bill, setBill }) {
   return (
     <div>
-      <span>How much was the bill?</span>
+      <span className="text">How much was the bill?</span>
       <input
         type="number"
         placeholder="Bill value"

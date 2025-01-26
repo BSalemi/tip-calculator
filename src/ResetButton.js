@@ -1,5 +1,9 @@
 function ResetButton({ handleReset }) {
-  return <button onClick={handleReset}>Reset</button>;
+  return (
+    <button className="reset-button" onClick={handleReset}>
+      Reset
+    </button>
+  );
 }
 
 export default ResetButton;

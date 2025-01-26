@@ -1,13 +1,53 @@
 body {
   margin: 0;
-  font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Roboto', 'Oxygen',
-    'Ubuntu', 'Cantarell', 'Fira Sans', 'Droid Sans', 'Helvetica Neue',
+  font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", "Roboto", "Oxygen",
+    "Ubuntu", "Cantarell", "Fira Sans", "Droid Sans", "Helvetica Neue",
     sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
 }
 
 code {
-  font-family: source-code-pro, Menlo, Monaco, Consolas, 'Courier New',
+  font-family: source-code-pro, Menlo, Monaco, Consolas, "Courier New",
     monospace;
+}
+
+input {
+  font-size: 15px;
+  margin-left: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+select {
+  font-size: 15px;
+  margin-left: 8px;
+  margin-top: 3px;
+  margin-bottom: 3px;
+}
+
+.app {
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+}
+
+.text {
+  font-size: 15px;
+}
+
+.total {
+  margin: 8px 5px;
+  font-size: 24px;
+  font-weight: bold;
+}
+
+.reset-button {
+  font-size: 16px;
+  font-weight: normal;
+  font-family: "Lucida Sans", "Lucida Sans Regular", "Lucida Grande",
+    "Lucida Sans Unicode", Geneva, Verdana, sans-serif;
+  width: 80px;
+  margin-top: 10px;
+  padding: 5px;
+  border-radius: 10% / 50%;
 }

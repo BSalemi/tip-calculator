@@ -1,7 +1,7 @@
 function Total({ bill, tip }) {
   let total = bill + bill * (tip / 100);
   return (
-    <div>
+    <div className="total">
       You pay ${total} (${bill} + ${tip} tip)
     </div>
   );
