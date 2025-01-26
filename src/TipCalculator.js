@@ -1,7 +1,7 @@
 import { useState } from "react";
 import BillInput from "./BillInput.js";
 import SelectPercentage from "./SelectPercentage.js";
-import Reset from "./ResetButton.js";
+import ResetButton from "./ResetButton.js";
 import Total from "./Total.js";
 
 function TipCalculator() {
@@ -36,7 +36,7 @@ function TipCalculator() {
       {bill > 0 && (
         <>
           <Total tip={combinedTip} bill={bill} />
-          <Reset handleReset={handleReset} />
+          <ResetButton handleReset={handleReset} />
         </>
       )}
     </div>
